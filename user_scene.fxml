@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.Scene?>
+<?import javafx.stage.Stage?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="UserManagementApp$UserController">
+    <TextField fx:id="usernameField" promptText="Username" />
+    <TextField fx:id="passwordField" promptText="Password" />
+    <Button fx:id="addButton" text="Add User" />
+    <Button fx:id="fetchButton" text="Fetch Users" />
+    <TableView fx:id="userTable">
+        <columns>
+            <TableColumn text="ID" />
+            <TableColumn text="Username" />
+            <TableColumn text="Password" />
+        </columns>
+    </TableView>
+</AnchorPane>

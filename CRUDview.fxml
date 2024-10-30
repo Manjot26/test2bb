@@ -1,0 +1,33 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="your.package.name.CRUDController"
+          xmlns:fx="http://javafx.com/fxml" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <columnConstraints>
+        <ColumnConstraints prefWidth="100"/>
+        <ColumnConstraints prefWidth="200"/>
+    </columnConstraints>
+
+    <Label text="Field 1:"/>
+    <TextField fx:id="field1"/>
+
+    <Label text="Field 2:"/>
+    <TextField fx:id="field2"/>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button fx:id="addButton" text="Add"/>
+        <Button fx:id="updateButton" text="Update"/>
+        <Button fx:id="deleteButton" text="Delete"/>
+    </HBox>
+
+    <TableView fx:id="tableView">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID"/>
+            <TableColumn fx:id="field1Column" text="Field 1"/>
+            <TableColumn fx:id="field2Column" text="Field 2"/>
+        </columns>
+    </TableView>
+</GridPane>
